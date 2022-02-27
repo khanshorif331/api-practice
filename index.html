@@ -11,19 +11,28 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 class="text-center">Welcome To The CocktailDB</h1>
+    <main>
+        <h1 class="text-center">Welcome To The CocktailDB</h1>
     <div class="container">
         <div class="input-group mb-3 w-50 mx-auto">
             <input id="input-field" type="text" class="form-control" placeholder="Search your favourite cocktail" aria-label="Recipient's username" aria-describedby="button-addon2">
             <button onclick="loadData()" id="search-button" class="btn btn-outline-secondary" type="button">Search</button>
+            <button onclick="deleteData()" id="delete-button" class="btn btn-outline-danger" type="button">Delete</button>
+
           </div>
     </div>
-
-    <!-- card -->
-    <section class="container">
-        <div id="card-container" class="row row-cols-1 row-cols-md-3 g-4"> 
+    <div id="main-container">
+        <div id="details-container" class="container"> 
         </div>
-    </section>
+        <!-- card -->
+        <section class="container">
+            <div id="card-container" class="row row-cols-1 row-cols-md-3 g-4"> 
+            </div>
+        </section>
+    </div>
+    
+    </main>
+    
     
       
     
